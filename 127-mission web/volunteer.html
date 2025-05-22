@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Volunteer Page</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="exterlinks/animate/animate.min.css" rel="stylesheet">
+    <link href="exterlinks/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="exterlinks/wow/wow.min.js"></script>
+    <script src="exterlinks/easing/easing.min.js"></script>
+    <script src="exterlinks/waypoints/waypoints.min.js"></script>
+    <script src="exterlinks/owlcarousel/owl.carousel.min.js"></script>
+    <script src="exterlinks/parallax/parallax.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- SweetAlert Script -->
+    
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="fw-bold text-primary m-0">Mission<span class="text-white">Web</span></h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon  "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="initiative.html" class="nav-item nav-link">Initiatives</a>
+                    <a href="calender.html" class="nav-item nav-link">Events</a>
+                    <a href="donate.html" class="nav-item nav-link">Donation</a>
+                    <a href="volunteer.html" class="nav-item nav-link">Volunteer</a>
+                    <a href="blog.html" class="nav-item nav-link">Blog</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+
+                </div>
+              
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+   
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center">
+            <h1 class="display-4 text-white animated slideInDown mb-4">Volunteer</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">volunteer</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Volunteer Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="display-4">Make a Difference</h1>
+                    <p class="lead">Join us as a volunteer and make a meaningful impact in our community. By
+                        registering, you'll have the opportunity to contribute your skills and time to various
+                        initiatives, from educational programs to community outreach. Together, we can create positive
+                        change and improve lives. </p>
+
+                </div>
+                <div class="col-md-3">
+                    <img class="img-fluid" src="https://us.123rf.com/450wm/ntlstudio/ntlstudio1911/ntlstudio191100160/133540660-voluntary-agitation-flat-vector-illustration-selfless-social-activists-community-service-workers.jpg?ver=6"
+                        alt="img loaded..">
+                </div>
+            </div>
+
+            <!-- Volunteer Opportunities -->
+            <section id="volunteer-opportunities" class="mb-5">
+                <h2 class="mb-4">Available Volunteer Opportunities</h2>
+                <div class="accordion" id="volunteerAccordion">
+                    <!-- Opportunity 1 -->
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Opportunity 1: Literacy Tutors
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#volunteerAccordion">
+                            <div class="card-body">
+                                Literacy Tutors are dedicated volunteers who help individuals of all ages improve their
+                                reading and writing skills. By providing personalized instruction and support, they
+                                empower learners to achieve greater literacy and academic success. Their commitment
+                                plays a crucial role in enhancing educational opportunities and fostering lifelong
+                                learning.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Opportunity 2 -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Opportunity 2: Community Cleanup
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#volunteerAccordion">
+                            <div class="card-body">
+                                Join us for a community cleanup event. Help make our neighborhood cleaner and greener
+                                by participating in this important initiative.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Opportunity 3 -->
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Opportunity 3: Food Drive
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#volunteerAccordion">
+                            <div class="card-body">
+                                Contribute to our food drive by donating non-perishable food items or volunteering to
+                                help sort and distribute food to those in need.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4th -->
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Opportunity 4: Tutoring and Mentoring
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#volunteerAccordion">
+                            <div class="card-body">
+                                Share your knowledge and skills by tutoring students or mentoring individuals in need
+                                of guidance and support.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Volunteer Sign-Up Form -->
+            <section id="volunteer-signup" class="">
+
+                <h2 class="mb-4 d-flex justify-content-center">Sign Up to Volunteer</h2>
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <form id="volunteerForm" class="bg-light">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="opportunity" class="form-label">Preferred Opportunity</label>
+                                    <select class="form-select" id="opportunity" required>
+                                        <option value="">Select an opportunity</option>
+                                        <option value="literacy">Literacy Tutor</option>
+                                        <option value="cleanup">Community Cleanup</option>
+                                        <option value="food_drive">Food Drive</option>
+                                        <option value="tutoring">Tutoring and Mentoring</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Additional Message(optional)</label>
+                                <textarea class="form-control" id="message" rows="3"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-5">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                          
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid"
+                            src="https://static.vecteezy.com/system/resources/previews/003/689/228/non_2x/online-registration-or-sign-up-login-for-account-on-smartphone-app-user-interface-with-secure-password-mobile-application-for-ui-web-banner-access-cartoon-people-illustration-vector.jpg"
+                            alt="">
+                    </div>
+            </section>
+        </div>
+    </div>
+    <!-- Volunteer End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h1 class="fw-bold text-primary mb-4">Mission<span class="text-white">Web</span></h1>
+                    <p>Mission Web is a dedicated non-profit committed to alleviating poverty through donations and
+                        volunteer support. Join us in transforming lives and building a brighter future for everyone.
+                    </p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Hyderabad,Telangana,India</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+91 9807641322</p>
+                    <p><i class="fa fa-envelope me-3"></i>missionweb@gmail.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="initiative.html">Initiatives</a>
+                    <a class="btn btn-link" href="events.html">Events</a>
+                    <a class="btn btn-link" href="donate.html">Donations</a>
+                    <a class="btn btn-link" href="volunteer.html">Volunteer</a>
+                    <a class="btn btn-link" href="blog.html">Blog</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email">
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy;All Right Reserved by <a href="#">Mission-Web</a>, .
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg rounded-circle back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('volunteerForm').addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the form from submitting the default way
+
+                // Display SweetAlert
+                Swal.fire({
+                    title: 'Thank you for signing up!',
+                    text: 'Your application has been received. We will contact you soon.',
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

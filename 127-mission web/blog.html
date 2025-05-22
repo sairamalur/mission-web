@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Blog page</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="exterlinks/animate/animate.min.css" rel="stylesheet">
+    <link href="exterlinks/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+    <script src="exterlinks/wow/wow.min.js"></script>
+    <script src="exterlinks/easing/easing.min.js"></script>
+    <script src="exterlinks/waypoints/waypoints.min.js"></script>
+    <script src="exterlinks/owlcarousel/owl.carousel.min.js"></script>
+    <script src="exterlinks/parallax/parallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- SweetAlert Script -->
+   
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+          <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+              <h1 class="fw-bold text-primary m-0">Mission<span class="text-white">Web</span></h1>
+          </a>
+          <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav ms-auto p-4 p-lg-0">
+                  <a href="index.html" class="nav-item nav-link active">Home</a>
+                  <a href="about.html" class="nav-item nav-link">About</a>
+                  <a href="initiative.html" class="nav-item nav-link">Initiatives</a>
+                  <a href="calender.html" class="nav-item nav-link">Events</a>
+                  <a href="donate.html" class="nav-item nav-link">Donation</a>
+                  <a href="volunteer.html" class="nav-item nav-link">Volunteer</a>
+                  <a href="blog.html" class="nav-item nav-link">Blog</a>
+                  <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+
+              </div>
+            
+          </div>
+      </nav>
+  </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center">
+            <h1 class="display-4 text-white animated slideInDown mb-4">Blog</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Blog</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!--  -->
+
+    <div class="container mt-5">
+        <h1 class="mb-4">Blog Page</h1>
+        <div class="bg-light  btn-group mb-4" role="group" aria-label="Blog Categories">
+          <div class="row">
+            <div class="col-md-6">
+              <button type="button" class="btn btn-primary m-4" id="articles-btn">Articles</button>
+            </div>
+            <div class="col-md-6">
+              <button type="button" class="btn btn-primary m-4" id="categories-btn">Categories</button>
+            </div>
+          </div>
+           
+           
+        </div>
+
+        <div id="articles-section" class="d-none">
+            <h2>Articles</h2>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                    <h5 class="mb-1" id="recrent"> Recent Activities</h5>
+                    <!-- <p class="mb-1">Details about the recent event, including highlights and key takeaways.</p> -->
+              <ul style="list-style-type: circle;">
+                <li>
+                    <h5>Youth Empowerment Workshop - June 2024</h5>
+                    <p>We held a Youth Empowerment Workshop focusing on skill-building and personal development for teenagers. The event included sessions on leadership, career planning, and mental health awareness. </p>
+                </li>
+                <li>
+                    <h5>Senior Support Program - April 2024</h5>
+                    <p>In April, we launched our Senior Support Program, providing essential services such as grocery delivery, transportation assistance, and companionship to elderly residents. </p>
+                </li>
+                <li>
+                    <h5>Educational Outreach Campaign - March 2024</h5>
+                    <p>Our Educational Outreach Campaign in March focused on raising awareness about the importance of education in underprivileged areas. We distributed educational materials, organized tutoring sessions, and worked with local schools to support students' academic growth. </p>
+                </li>
+                <li>
+                    <h5>Food Distribution Drive - July 2024</h5>
+                    <p>In July, we organized a food distribution drive to support families facing food insecurity. With the help of our volunteers and generous donations from local businesses, we distributed over 2,000 meals to those in need. </p>
+                </li>
+
+              </ul>
+               
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <h5 class="mb-1">Success Stories</h5>
+                    <p class="mb-1">At MissionWeb, we believe in the power of community and the incredible impact of collective action.</p>
+                    <ul style="list-style-type: circle;">
+                        <li>
+                            <h5>Empowering Women Through Skills Training</h5>
+                            <p>Our Women’s Empowerment Program aims to equip women with the skills needed to achieve economic independence. Fatima, a participant in our sewing and tailoring course, started her own small business with the skills she learned</p>
+                        </li>
+                        <li>
+                            <h5>Clean Water, Healthy Lives: A Community Transformed</h5>
+                            <p>In the rural village of Lushoto, access to clean water was a daily struggle, leading to numerous health issues. Thanks to your generous donations, we installed a sustainable water filtration system that now provides clean, safe drinking water to over 500 families. </p>
+                        </li>
+                        
+                    </ul>
+                    
+                
+                
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <h5 class="mb-1">Relevant Topic 1</h5>
+                    <!-- <p class="mb-1">Insights and information about a relevant topic in the industry.</p> -->
+                     <ul style="list-style-type: circle;">
+                        <li>
+                            <h5> Programs and Initiatives</h5>
+                            <p>Our Literacy for All Program focuses on improving literacy rates among children and adults in underserved communities. </p>
+                        <p>Our Healthy Communities Initiative aims to provide access to healthcare services, promote healthy lifestyles, and address health disparities in our communities.</p>
+                        
+                        </li>
+                        <li>
+                            <h5>Donate</h5>
+                            <p>Your generous donations enable us to continue our vital work. Every contribution, big or small, helps us provide essential services and support to those in need. Donate today to help us make a difference. Together, we can transform lives and build stronger communities.</p>
+                        </li>
+                       
+                     </ul>
+                </a>
+           
+            </div>
+        </div>
+
+        <div id="categories-section" class="d-none">
+            <h2>Categories</h2>
+            <div class="container-xxl py-5">
+                <div class="container mb-3">
+                  <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-4"></div>
+                   
+                    <div class="col-lg-4"></div>
+                  </div>
+                  <div class="row ">
+                    <div class="col-md-4">
+                        <h2 class="text-center">Transforming Lives Through Donations</h2>
+                      <div class="card text-bg-dark">
+                       
+                        <a href="https://www.apple.com/in/newsroom/2022/12/across-the-globe-apple-and-its-teams-find-new-ways-to-give/" target="_blank">
+                          <img src="https://www.apple.com/newsroom/images/product/services/standard/Apple-Global-Volunteer-Program-hero_Full-Bleed-Image.jpg.large.jpg"
+                            class="card-img" alt="..." height="198px">
+                          <div class="card-img-overlay text-white" style="background-color: rgba(0, 0, 0, 0.5);">
+                           
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="text-center"> Recognizing Our Supporters </h2>
+                      <div class="card text-bg-dark">
+                        <a target="_blank" href="https://www.11fiftyseven.com/blog/donor-recognition">
+                          <img
+                            src="https://images.squarespace-cdn.com/content/v1/5b9a64d82487fda3e9197214/1605189526028-ZET8O9OOBQ4J5MWZU3B6/donor+recognition_feature_2.jpg?format=1500w"
+                            height="200px" class="card-img" alt="...">
+                         
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="text-center">Working Together For a Change</h2>
+                      <div class="card text-bg-dark">
+                        <a href="https://c4npr.org/2024/02/22/exploring-the-world-of-nonprofit-collaboration/" target="_blank">
+                          <img src="https://media.istockphoto.com/id/155378233/photo/world-connection-concept.jpg?s=612x612&w=0&k=20&c=KfpOi7jIWT9OyLiHOxRqqPWYbU-B2nrp30excdJkP1c=" height="200px"
+                            class="card-img" alt="...">
+                         
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+        </div>
+        <div id="recent" class="d-none">
+            <h2>Categories</h2>
+            <div class="container-xxl py-5">
+                <div class="container mb-3">
+                  <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-4"></div>
+                   
+                    <div class="col-lg-4"></div>
+                  </div>
+                  <div class="row ">
+                    <div class="col-md-4">
+                        <h2 class="text-center">Transforming Lives Through Donations</h2>
+                      <div class="card text-bg-dark">
+                       
+                        <a href="https://www.apple.com/in/newsroom/2022/12/across-the-globe-apple-and-its-teams-find-new-ways-to-give/" target="_blank">
+                          <img src="https://www.apple.com/newsroom/images/product/services/standard/Apple-Global-Volunteer-Program-hero_Full-Bleed-Image.jpg.large.jpg"
+                            class="card-img" alt="..." height="198px">
+                          <div class="card-img-overlay text-white" style="background-color: rgba(0, 0, 0, 0.5);">
+                       
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="text-center"> Recognizing Our Supporters </h2>
+                      <div class="card text-bg-dark">
+                        <a target="_blank" href="https://www.11fiftyseven.com/blog/donor-recognition">
+                          <img
+                            src="https://images.squarespace-cdn.com/content/v1/5b9a64d82487fda3e9197214/1605189526028-ZET8O9OOBQ4J5MWZU3B6/donor+recognition_feature_2.jpg?format=1500w"
+                            height="200px" class="card-img" alt="...">
+                       
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="text-center">Working Together For a Change</h2>
+                      <div class="card text-bg-dark">
+                        <a href="https://c4npr.org/2024/02/22/exploring-the-world-of-nonprofit-collaboration/" target="_blank">
+                          <img src="https://media.istockphoto.com/id/155378233/photo/world-connection-concept.jpg?s=612x612&w=0&k=20&c=KfpOi7jIWT9OyLiHOxRqqPWYbU-B2nrp30excdJkP1c=" height="200px"
+                            class="card-img" alt="...">
+                        
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+        </div>
+    </div>
+<!--  -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h1 class="fw-bold text-primary mb-4">Mission<span class="text-white">Web</span></h1>
+                    <p>Mission Web is a dedicated non-profit committed to alleviating poverty through donations and
+                        volunteer support. Join us in transforming lives and building a brighter future for everyone.
+                    </p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Hyderabad,Telangana,India</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+91 9807641322</p>
+                    <p><i class="fa fa-envelope me-3"></i>missionweb@gmail.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="initiative.html">Initiatives</a>
+                    <a class="btn btn-link" href="events.html">Events</a>
+                    <a class="btn btn-link" href="donate.html">Donations</a>
+                    <a class="btn btn-link" href="volunteer.html">Volunteer</a>
+                    <a class="btn btn-link" href="blog.html">Blog</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email">
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy;All Right Reserved by <a href="#">Mission-Web</a>, .
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <script>
+        document.getElementById('articles-btn').addEventListener('click', function() {
+    document.getElementById('articles-section').classList.remove('d-none');
+    document.getElementById('categories-section').classList.add('d-none');
+});
+
+document.getElementById('categories-btn').addEventListener('click', function() {
+    document.getElementById('categories-section').classList.remove('d-none');
+    document.getElementById('articles-section').classList.add('d-none');
+});
+
+    </script>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg rounded-circle back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+</body>
+
+</html>

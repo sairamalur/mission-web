@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Initiative Page</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+<!-- Favicon -->
+<link href="img/favicon.ico" rel="icon">
+
+<!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+<!-- Icon Font Stylesheet -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Libraries Stylesheet -->
+<link href="exterlinks/animate/animate.min.css" rel="stylesheet">
+    <link href="exterlinks/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+<!-- Customized Bootstrap Stylesheet -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Template Stylesheet -->
+<link href="css/style.css" rel="stylesheet">
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+    <script src="exterlinks/wow/wow.min.js"></script>
+    <script src="exterlinks/easing/easing.min.js"></script>
+    <script src="exterlinks/waypoints/waypoints.min.js"></script>
+    <script src="exterlinks/owlcarousel/owl.carousel.min.js"></script>
+    <script src="exterlinks/parallax/parallax.min.js"></script>
+
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="fw-bold text-primary m-0">Mission<span class="text-white">Web</span></h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="initiative.html" class="nav-item nav-link">Initiatives</a>
+                    <a href="calender.html" class="nav-item nav-link">Events</a>
+                    <a href="donate.html" class="nav-item nav-link">Donation</a>
+                    <a href="volunteer.html" class="nav-item nav-link">Volunteer</a>
+                    <a href="blog.html" class="nav-item nav-link">Blog</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+
+                </div>
+               
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center">
+            <h1 class="display-4 text-white animated slideInDown mb-4">Initiative</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Initiative</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <div class="container">
+        <h1 class="my-4">Our Initiatives</h1>
+
+        <!-- Filtering Options -->
+        <div class="row mb-4">
+
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="categoryFilter">Category</label>
+                    <select class="form-control" id="categoryFilter">
+                        <option value="">All Categories</option>
+                        <option value="education">Education</option>
+                        <option value="health">Health</option>
+                        <option value="environment">Environment</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="dateFilter">Date</label>
+                    <input type="date" class="form-control" id="dateFilter">
+                </div>
+                
+            </div>
+
+            <!-- Initiative List -->
+            <div class="row mt-4" id="initiativeList">
+             
+                <div class="col-md-4 initiative-card">
+                    <div class="card">
+                        <img src="https://i0.wp.com/lookout.co/wp-content/uploads/2021/06/90-3rcaJ2.jpg?fit=840%2C514&ssl=1"
+                            class="card-img-top" alt="Initiative Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Mental Health Awareness Campaign</h5>
+                            <p class="card-text">The Mental Health Awareness Campaign aims to destigmatize mental health
+                                issues and provide essential resources and support. </p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#initiativeDetailModal"
+                                onclick="showDetails('clean-water-initiative')">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 initiative-card">
+                    <div class="card">
+                        <img height="250"
+                            src="https://media.istockphoto.com/id/154947072/photo/holiday-resort-located-at-the-konkan-beach-in-maharashtra-india.webp?b=1&s=170667a&w=0&k=20&c=8fhvUYiFvVPAOSVCCB6spfnvXeO82Pj2hzTcdP8OITg="
+                            class="card-img-top" alt="Initiative Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Rural Development Initiative</h5>
+                            <p class="card-text">
+                                The Rural Development Initiative aims to uplift underserved rural communities by
+                                improving infrastructure, providing access to healthcare. </p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal"
+                                data-target="#initiativeDetailModal2"
+                                onclick="showDetails('clean-water-initiative')">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 initiative-card">
+                    <div class="card">
+                        <img height="250"
+                            src="https://static.toiimg.com/thumb/msid-92688336,width-1280,height-720,resizemode-72/92688336.jpg"
+                            class="card-img-top" alt="Initiative Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Affordable Housing Project</h5>
+                            <p class="card-text">The Affordable Housing Project is dedicated to providing safe, quality,
+                                and affordable housing for low-income families. </p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal"
+                                data-target="#initiativeDetailModal3"
+                                onclick="showDetails('clean-water-initiative')">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed View Modal -->
+            <!-- 1st -->
+            <div class="modal fade" id="initiativeDetailModal" tabindex="-1" role="dialog"
+                aria-labelledby="initiativeDetailModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="initiativeDetailModalLabel">Mental Health Awareness Campaign
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid"
+                                src="https://images.odishatv.in/uploadimage/library/16_9/16_9_5/Mental-health-Issue_1618625792.jpg"
+                                alt="">
+                            <p><strong>Goals:</strong>1. A greater understanding of mental health issues among the
+                                community.
+                                2.More acceptance and open conversations about mental health.</p>
+                            <p><strong>Outcomes:</strong> Donate: Contribute financially to support the campaign’s
+                                activities, resources, and outreach programs.</p>
+                            <p><strong>How to Get Involved:</strong> Volunteer to help with installation, donate funds,
+                                or spread awareness about the initiative.</p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+
+            </div>
+            <!-- 2nd -->
+            <div class="modal fade" id="initiativeDetailModal2" tabindex="-1" role="dialog"
+                aria-labelledby="initiativeDetailModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="initiativeDetailModalLabel">Affordable Housing Project query
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid rounded-circle"
+                                src="https://bhuvan-app1.nrsc.gov.in/pmgsy/home/assets/Picture2.JPG" alt="img loaded..">
+                            <p><strong>Goals:</strong> Enhance the quality of life in rural communities by improving
+                                infrastructure such as roads, schools, and healthcare facilities.</p>
+                            <p><strong>Outcomes:</strong>Strengthened community networks and enhanced local leadership for ongoing development efforts.</p>
+                            <p><strong>How to Get Involved:</strong> Collaborate with us through partnerships to bring additional resources, expertise, and support to rural communities.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+
+            </div>
+            <!-- 3rd -->
+            <div class="modal fade" id="initiativeDetailModal3" tabindex="-1" role="dialog"
+                aria-labelledby="initiativeDetailModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="initiativeDetailModalLabel">Affordable Housing Project query
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid rounded-circle" src="https://www.karmod.eu/media/blog/164/low-cost-housing-south-africa-cover.jpg" alt="img loaded..">
+                            <p><strong>Goals:</strong>Develop sustainable housing solutions that can be replicated in other communities.</p>
+                            <p><strong>Outcomes:</strong> Enhanced financial stability and security for families through access to affordable housing.</p>
+                            <p><strong>How to Get Involved:</strong> Collaborate with us if you are an organization, business, or government entity to expand the reach and impact of our housing initiatives.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            // Event listener for the search button
+            document.getElementById('searchButton').addEventListener('click', function () {
+                var searchValue = document.getElementById('searchFilter').value.toLowerCase();
+                var cards = document.querySelectorAll('#initiativeList .card');
+
+                cards.forEach(function (card) {
+                    var title = card.querySelector('.card-title').textContent.toLowerCase();
+                    var description = card.querySelector('.card-text').textContent.toLowerCase();
+
+                    if (title.includes(searchValue) || description.includes(searchValue)) {
+                        card.parentElement.style.display = 'block';
+                    } else {
+                        card.parentElement.style.display = 'none';
+                    }
+                });
+            });
+
+            function showDetails(id) {
+                // Logic to fetch and display initiative details based on ID
+                // Update the modal content with initiative details
+            }
+        </script>
+        <!--  -->
+
+
+
+
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h1 class="fw-bold mb-4" style="color: orangered;">Mission<span class="text-white">Web</span></h1>
+                        <p>Mission Web is a dedicated non-profit committed to alleviating poverty through donations and volunteer support. Join us in transforming lives and building a brighter future for everyone.</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square me-1" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-light mb-4">Address</h5>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Hyderabad,Telangana,India</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+91 9807641322</p>
+                        <p><i class="fa fa-envelope me-3"></i>missionweb@gmail.com</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-light mb-4">Quick Links</h5>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="initiative.html">Initiatives</a>
+                        <a class="btn btn-link" href="events.html">Events</a>
+                        <a class="btn btn-link" href="donate.html">Donations</a>
+                        <a class="btn btn-link" href="volunteer.html">Volunteer</a>
+                        <a class="btn btn-link" href="blog.html">Blog</a>
+                        <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-light mb-4">Newsletter</h5>
+                      
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Your email">
+                            <button type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy;All Right Reserved by <a href="#">Mission-Web</a>, .
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+</body>
+
+</html>
